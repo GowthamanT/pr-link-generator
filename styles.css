@@ -130,12 +130,19 @@ h2 {
     height: calc(100vh - 50px);
     width: 100%;
     overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     position: relative;
+    top: 120px;
 }
 
 input {
@@ -166,8 +173,6 @@ button.submit {
     width: 70%;
     text-align: center;
     padding: 10px;
-    /* height: 30px;
-    line-height: 30px; */
     border-radius: 5px;
     color: white;
     display: none;
