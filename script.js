@@ -51,6 +51,10 @@ function generateLink() {
         notificationElement.classList.add('notification-active');
 
         this.hideNotificationBar();
+
+        // Clearing the inputs
+        document.getElementById('textToDisplay').value = '';
+        document.getElementById('urlLink').value = '';
     } catch (error) {
         console.error('Copy to clipboard failed:', error);
 
