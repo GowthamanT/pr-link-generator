@@ -150,6 +150,7 @@ input {
     height: 25px;
     line-height: 25px;
     vertical-align: middle;
+    padding-left: 10px;
 }
 
 input:focus-visible {
