@@ -6,8 +6,8 @@ function generateLink() {
     const notificationElement = document.getElementById('notification');
 
     // Validate inputs
-    if (!textToDisplay || !urlLink) {
-        notificationElement.innerText = 'Please enter both Text and Url.';
+    if (!urlLink) {
+        notificationElement.innerText = 'Please enter a URL.';
 
         notificationElement.classList.remove('success');
         notificationElement.classList.add('failure');
@@ -21,7 +21,7 @@ function generateLink() {
     // Create link element
     const linkElement = document.createElement('a');
     linkElement.href = urlLink;
-    linkElement.textContent = textToDisplay;
+    linkElement.textContent = textToDisplay ? textToDisplay : urlLink;
 
     // Create text node for the custom text
     const staticText = document.createTextNode('Please review this PR - ');
